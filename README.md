@@ -22,7 +22,14 @@ To use the actual programs:
   Use Next Step to continue solving while seeing the solver's process.
   
   Use Reset to restart the program.
+However I am gonna highlight logic that I am proud of aswell:
+  Python natively keeps real numbers and imaginary numbers completely separate. By substituting x = 1j, a string like "3*x + 5" becomes evaluated as the 
+  complex number 5 + 3j. By calling .imag you can extract the variable coefficient (3.0), and by calling .real you can extract the standalone constant 
+  (5.0).I mostly learnt this because I was LAZY and avoided recursive string spliting because complex.
 
+
+  I also heard you can execute bad stuff with eval so I went to the official python website and found that u can do {"__builtins__": None} so no importing   
+  and opening in the widgets typing input box thing.
   
 File Structure: A simple map of your project files and what each one does.
 
@@ -46,18 +53,18 @@ I am not proud of this but this project is a last minute! I am writing this as j
 
 I actually originally meant to atleast implement multiply(*) and divide(/) and I was just double checking last minute about my code...
 
-and found out that 2x = 2 breaks because of no logic code.
+and found out that 2x = 2 breaks because of no logic code. #queue problem highlight
 
 I eventually fixed it by automating a multiply(*) and then code broke because 2**x...
 
-So i decided to ditch multiply but keep the 2x = 2 code.
+So i decided to ditch multiply but keep the 2x = 2 code. #queue problem solved
 
 Honestly I have to put full blame on myself because I thought I had an extra week and rushed widgets last second.
 
-If I had 2 extra weeks would probably add back multiply somehow and also divide.
+If I had 2 extra weeks would probably add back multiply somehow and also divide + widgets buttons for typing to make options clearer instead of the input box.
 
-If there is also no activities for me next week I might also add brackets with coefficient features.
+If there is also no activities for the 2 extra weeks I might also add brackets with coefficient features.
 
-I also just found out about eval and SymPy so I wrote alot of stuff for nothing.
+I also just found out about SymPy so I wrote alot of stuff for nothing.
 
-Maybe I should have done something else instead of math.
+Maybe I should have done other projects instead of math.
