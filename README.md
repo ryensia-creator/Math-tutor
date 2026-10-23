@@ -49,7 +49,7 @@ can use the Reset button to set the Equation over.
 Reflection: What was the hardest problem you faced, and how did you solve it? If you had two more weeks, what would you add?
 
 
-I am not proud of this but this project is a last minute! I am writing this as just ticked past 12:42...
+I am not proud of this but this project is a last minute! I am writing this as it just ticked past 12:42pm...(did not notice and all my work is redundant now)
 
 I actually originally meant to atleast implement multiply(*) and divide(/) and I was just double checking last minute about my code...
 
