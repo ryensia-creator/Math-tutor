@@ -11,6 +11,25 @@ This project is a program that solves simple linear equations and shows the proc
 Features: A bulleted list of the main functionalities. E.g. 'Saves high scores to a file using File IO' or 'Uses a binary tree to store and search questions.'
 
 The main feature of this project includes using COLORED ipywidgets to both be more appealing to the user.
+When talking about the functionality however, this program can also differentiate the linear answer from Identity Equations and Contradictions.
+
+  An Identity equation is when after cancelling multiple parts of the equation, it shows that a value is equal to itself. Most of the time, an Identity Equation 
+  ends in the format (Ans:x=x). This is important because it actually shows that the equation has INFINITE solutions instead of one and my program is able to detect this 
+  and  display the correct information about the linear equation.
+
+  A Contradiction is when after cancelling multiple parts of the equation, it shows that a value is equal to something else(false and incorrect). Most of the time, a 
+  Contradiction ends in the format (Ans: x=y) where x does not equal y. For equations where x = y, look at Identity Equations.Contradictions are important because they 
+  prove that there are NO solutions instead of one and my program is capable of detecting this and display the correct information about the linear equation.
+  
+
+However I am gonna highlight logic that I am proud of aswell:
+Python natively keeps real numbers and imaginary numbers completely separate. By substituting x = 1j, a string like "3*x + 5" becomes evaluated as the 
+complex number 5 + 3j. By calling .imag you can extract the variable coefficient (3.0), and by calling .real you can extract the standalone constant 
+(5.0).I mostly learnt this because I was LAZY and avoided recursive string spliting because complex.
+
+
+I also heard you can execute bad stuff with eval so I went to the official python website and found that u can do {"__builtins__": None} so no importing   
+and opening in the widgets typing input box thing.
 
 How to Run: The exact steps to run your project. What needs to be installed? What command starts the program? (python main.py)
 Open Math_Tutor.py and a python running software. Copy the code over to your designated python running software and run it.
@@ -22,14 +41,7 @@ To use the actual programs:
   Use Next Step to continue solving while seeing the solver's process.
   
   Use Reset to restart the program.
-However I am gonna highlight logic that I am proud of aswell:
-  Python natively keeps real numbers and imaginary numbers completely separate. By substituting x = 1j, a string like "3*x + 5" becomes evaluated as the 
-  complex number 5 + 3j. By calling .imag you can extract the variable coefficient (3.0), and by calling .real you can extract the standalone constant 
-  (5.0).I mostly learnt this because I was LAZY and avoided recursive string spliting because complex.
 
-
-  I also heard you can execute bad stuff with eval so I went to the official python website and found that u can do {"__builtins__": None} so no importing   
-  and opening in the widgets typing input box thing.
   
 File Structure: A simple map of your project files and what each one does.
 
